@@ -1,0 +1,151 @@
+.flex-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+}
+
+.track-crypto-heading,
+.real-time-heading {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.track-crypto-heading {
+    color: var(--white);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.track-crypto-heading:hover {
+    color: var(--black);
+    -webkit-text-stroke-color: var(--white);
+    transition: all 0.3s;
+}
+
+.real-time-heading {
+    color: var(--blue);
+}
+
+.info-text {
+    color: var(--grey);
+    font-size: 1rem;
+
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.phone-container {
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    right: 5rem;
+}
+
+.iphone {
+    position: absolute;
+    right: 0;
+    min-width: 350px;
+    width: 50%;
+    z-index: 2;
+}
+
+.gradient {
+    position: absolute;
+    right: 0px;
+    top: 8rem;
+    min-width: 300px;
+    width: 40%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .track-crypto-heading,
+    .real-time-heading {
+        font-size: 5rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .gradient {
+
+        top: 6rem;
+        min-width: 200px;
+    }
+
+    .iphone {
+        min-width: 250px;
+        width: 50%;
+    }
+    .phone-container{
+        right:0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+     
+    .phone-container{
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+        right: 0;
+    }
+
+    .flex-info {
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .track-crypto-heading,
+    .real-time-heading {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .track-crypto-heading{
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .info-text {
+        text-align: center;
+    }
+
+    .btn-flex {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gradient {
+        left: 25%;
+    }
+
+    .iphone {
+        left: 15%;
+    }
+
+    .left-component{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .gradient,
+    .iphone {
+      left: 0px;
+    }
+  
+    .iphone {
+      left: -30px;
+    }
+  }
+  
